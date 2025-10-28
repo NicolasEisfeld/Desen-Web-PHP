@@ -16,6 +16,9 @@ shuffle($messages);
 </head>
 <body>
     <h1>Lista de Exercícios</h1>
-    <p><a href="saudacao.php">Exercício 1</a></p>
+    <p> 
+        <a href="saudacao.php">Exercício 1</a>
+        <a href="login.php">Exercício 2</a>
+    </p>
 </body>
 </html>

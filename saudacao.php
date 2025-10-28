@@ -12,28 +12,27 @@
         <input type="text" id="nome" name="nome" placeholder="Nome">
         <label for="sobrenome">Sobrenome:</label>
         <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
-        <label for="hora">Horas:</label>
-        <input type="time" id="hora" name="hora">
+        <label for="horas">Horas:</label>
+        <input type="time" id="hora" name="horas">
         <input type="submit" value="Enviar">
     </form>
     <br><br>
     <h1>Resultado</h1>
     <?php
-        $nome = $_GET("nome");
-        $sobrenome = $_GET("sobrenome");
-        $horas = $_GET("horas");
+        $nome = $_GET["nome"];
+        $sobrenome = $_GET["sobrenome"];
+        $horas = $_GET["horas"];
         $horas = intval($horas);
         
-        if ($hora >= 5 && $hora < 12) {
+        if ($horas >= 5 && $horas < 12) {
             $mensagem = "Bom dia";
-        } elseif ($hora >= 12 && $hora < 19) {
+        } elseif ($horas >= 12 && $horas < 19) {
             $mensagem = "Boa tarde";
         } else {
             $mensagem = "Boa noite";
         }
 
-
-        echo "<h1>$mensagem, $nomeCompleto!</h1>"
+        echo "<h2>$mensagem, $nome $sobrenome!</h2>"
 
     ?>
 </body>
