@@ -1,13 +1,4 @@
-<?php
-$messages = [
-    'Welcome to PHPSandbox',
-    'Добро пожаловать в PHPSandbox',
-    'Bienvenue sur PHPSandbox',
-    'Bienvenido a PHPSandbox',
-];
 
-shuffle($messages);
-?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -19,6 +10,7 @@ shuffle($messages);
     <p> 
         <a href="saudacao.php">Exercício 1</a>
         <a href="login.php">Exercício 2</a>
+        <a href="escrever.php">Exercício 3</a>
     </p>
 </body>
 </html>
