@@ -31,6 +31,7 @@
         <br><br>
         <input type="submit" value="Enviar">
     </form>
+    <a href="./index.html">Início</a>
 
     <br><br>
 

@@ -35,6 +35,8 @@
         echo "<h2>$mensagem, $nome $sobrenome!</h2>"
 
     ?>
+
+    <a href="./index.html">Início</a>
 </body>
 </html>
 
