@@ -14,7 +14,7 @@
        <label for="email">Email</label>
        <input type="text" id="email" name="email"><br>
 
-       <button>
+       <button>Cadastrar</button>
     </form>
 
     <?php 
