@@ -9,24 +9,28 @@
     <form action="" method="POST" >
        <label for="nome">Nome</label>
        <input type="text" id="nome" name="nome"><br>
-       <label for="idade">Idade</label>
-       <input type="number" id="idade" name="idade"><br>
        <label for="email">Email</label>
        <input type="text" id="email" name="email"><br>
-
+       <label for="senha">Senha</label>
+       <input type="password" id="password" name="password"><br>
        <button>Cadastrar</button>
     </form>
 
     <?php 
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['mensagem'])) {
-        
-        $SQL = "INSERT INTO usuarios (Nome, idade, email) VALUES ("
+        $Nome =  $_POST["nome"];
+        $Email =  $_POST["email"];
+        $Password = $_POST["password"];
+
+        $SQL = "INSERT INTO usuarios (Nome, email, password) VALUES ("
+        + $Nome + ", " + $Email + ", " + $Password + ");";
         if ($mysqli->query($sql)) {
             $id_usuario = $mysqli->insert_id;
-            echo "Usuário inserido"
+            echo "Usuário inserido";
+        } else {
+            echo "Erro no cadastro";
         }
     }
     ?>
 </body>
-</html>
